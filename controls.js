@@ -1,6 +1,8 @@
+console.log('help')
 var menu = document.getElementById("menu-list");
 var menubtn = document.getElementById("menu-btn");
 var menulnk = document.getElementsByClassName("menu-link");
+console.log(menu)
 console.log(menulnk);
 for (var i = 0; i < menulnk.length; i++) {
   menulnk[i].addEventListener("click", (e) => {

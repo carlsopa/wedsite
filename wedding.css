@@ -65,17 +65,20 @@ img{
   z-index: 2;
 }
 #menu-btn{
-  transform: rotate(270deg) translateY(-65vw) translateX(-50%);
+  /* transform: rotate(270deg) translateY(-57.6vw) translateX(-50%);
   padding:10px 30px;
   border:none;
   border-radius:10px 10px 0px 0px;
-  background-color:teal;
+  background-color:rgba(0, 128, 128, .7);
   font-family: 'Parisienne';
   font-size:1.5rem;
+  color:white; */
+
 }
 #menu-items{
   left:0px;
   list-style-type: none;
+  top:30vh;
   
 }
 
@@ -84,26 +87,38 @@ img{
   color:white;
   font-family: 'Parisienne';
   font-size: 2rem;
-  
-  
+}
+#menu-items li {
+  padding:10px 0px;
 }
 .right-float {
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 40vh;
 }
 .menu-list{
   position: fixed;
   right:0;
   height:100vh;
-  width:75vw;
-  background-color:teal;
+  width:65vw;
+  background-color:rgba(0, 128, 128, .8);
 }
 .open{
   transform:translateX(0);
 }
+.btn{
+  transform: rotate(270deg) translateY(0) translateX(-50%);
+  padding:10px 30px;
+  border:none;
+  border-radius:10px 10px 0px 0px;
+  background-color:rgba(0, 128, 128, .8);
+  font-family: 'Parisienne';
+  font-size:1.5rem;
+  color:white;
+
+}
 .btn-open{
-  transform:translateX(-50vw)
+  transform: rotate(270deg) translateY(-57.6vw) translateX(-50%);
 }
 /* end the menu css */
 
