@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style>
+      .right-float {
+        position: fixed;
+        right: 0;
+        top: 50%;
+      }
+      .menu-list {
+        position: fixed;
+        right: 0;
+        background-color: red;
+        transform: translateX(50vw);
+        width: 50vw;
+        height: 100vh;
+        font-size: 2em;
+      }
+      #menu-items {
+        position: relative;
+        margin: 0 auto;
+        left: 50%;
+      }
+      .open{
+          transform:translateX(0);
+      }
+      .btn-open{
+          transform:translateX(-50vw)
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id='menu-btn' class="right-float btn-open">menu</button>
+      <nav id='menu-list' class='menu-list open'>
+        <ul id="menu-items" class="right-float">
+          <li><a class='menu-link' href='#'>tst</a></li>
+          <li><a class='menu-link' href='#'>tst</a></li>
+          <li><a class='menu-link' href='#'>tst</a></li>
+          <li><a class='menu-link' href='#'>tst</a></li>
+          <li><a class='menu-link' href='#'>tst</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script>
+      var menu = document.getElementById('menu-list');
+      var menubtn = document.getElementById('menu-btn');
+      var menulnk = document.getElementsByClassName('menu-link');
+      console.log(menulnk);
+      for(var i =0; i<menulnk.length;i++){
+        menulnk[i].addEventListener('click',e=>{
+        menubtn.classList.toggle('btn-open');
+          menu.classList.toggle('open');
+      })
+      }
+      menubtn.addEventListener('click',e=>{
+          menubtn.classList.toggle('btn-open');
+          menu.classList.toggle('open');
+      });
+      menulnk.addEventListener('click',e=>{
+        menubtn.classList.toggle('btn-open');
+          menu.classList.toggle('open');
+      })
+  </script>
+</html>
