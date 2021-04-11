@@ -65,7 +65,13 @@ img{
   z-index: 2;
 }
 #menu-btn{
-  transform: rotate(270deg) translateY(-70vw) translateX(-50%);
+  transform: rotate(270deg) translateY(-65vw) translateX(-50%);
+  padding:10px 30px;
+  border:none;
+  border-radius:10px 10px 0px 0px;
+  background-color:teal;
+  font-family: 'Parisienne';
+  font-size:1.5rem;
 }
 #menu-items{
   left:0px;
