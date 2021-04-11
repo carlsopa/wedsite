@@ -1,0 +1,117 @@
+// #ab4f01
+// #f39933
+// #a67871
+// #5b2337
+// #2e161d
+
+//font-family: 'Dancing Script', cursive;
+//font-family: 'Great Vibes', cursive;
+//font-family: 'Indie Flower', cursive;
+//font-family: 'Parisienne', cursive;
+//font-family: 'Sacramento', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Indie+Flower&family=Parisienne&family=Sacramento&display=swap');
+body {
+  margin: 0px;
+  font-size: 2.5em;
+//   overflow: hidden;
+}
+section {
+    height:100vh;
+}
+header{
+    position: fixed;
+}
+
+#main {
+  // height:100vh;
+}
+#heading {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+#menu{
+    background-color: #2b2e33;
+    width:100vw;
+    height:100vh;
+    
+    transform: translateX(-100vw);
+    display: grid;
+    place-items: center;
+    li{
+        list-style-type: none;
+        // margin:0 auto;
+        position: relative;
+        text-align: center;
+        margin:40px;
+        // width:25%;
+        a{
+            color:#bab5bd;
+            font-family:'Great Vibes';
+            font-size:2.5em;
+            text-decoration: none;
+            
+            // text-transform: uppercase;
+        }
+    }
+}
+.section {
+//   height: 100vh;
+}
+.header {
+  display: block;
+  text-align: center;
+  &::before {
+    content: "a";
+  }
+  &::after {
+    content: "e";
+  }
+}#menu-check:checked ~ #menu{
+    transform: translateX(0);
+}
+// .animation-fwd-top {
+//   animation: animation-fwd-top 1.5s ease-in-out;
+// }
+// .animation-sld-lft {
+//     animation: animation-sld-lft 1.5s  1s   ease-in-out;
+// }
+// .animation-sld-rgt {
+//     animation: animation-sld-rgt 1.5s  1s   ease-in-out;
+
+// }
+// @keyframes animation-fwd-top {
+//     0% {
+//         letter-spacing: -0.5em;
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity:1;
+//     }
+// }
+// @keyframes animation-sld-rgt {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(1000px);
+//     }
+//     40%{
+//         opacity: .6;
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+
+// }
+// @keyframes animation-sld-lft {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(-1000px);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+
+// }
