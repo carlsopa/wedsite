@@ -92,7 +92,7 @@ img{
   padding:10px 0px;
 }
 .right-float {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 40vh;
 }
@@ -102,12 +102,13 @@ img{
   height:100vh;
   width:65vw;
   background-color:rgba(0, 128, 128, .8);
+  transform:translateX(65vw)
 }
 .open{
   transform:translateX(0);
 }
 .btn{
-  transform: rotate(270deg) translateY(0) translateX(-50%);
+  transform: rotate(270deg) translateY(50%) translateX(-50%);
   padding:10px 30px;
   border:none;
   border-radius:10px 10px 0px 0px;
