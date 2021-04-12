@@ -1,20 +1,25 @@
-console.log('help')
 var menu = document.getElementById("menu-list");
 var menubtn = document.getElementById("menu-btn");
 var menulnk = document.getElementsByClassName("menu-link");
-console.log(menu)
-console.log(menulnk);
-for (var i = 0; i < menulnk.length; i++) {
-  menulnk[i].addEventListener("click", (e) => {
+var weddingDate = 'May 01, 2022 00:00:00';
+
+let togglestate = () =>{
     menubtn.classList.toggle("btn-open");
     menu.classList.toggle("open");
+};
+let countdown = date =>{
+    console.log(date);
+
+}
+for (var i = 0; i < menulnk.length; i++) {
+  menulnk[i].addEventListener("click", (e) => {
+      togglestate()
   });
 }
 menubtn.addEventListener("click", (e) => {
-  menubtn.classList.toggle("btn-open");
-  menu.classList.toggle("open");
+    togglestate()
 });
-menulnk.addEventListener("click", (e) => {
-  menubtn.classList.toggle("btn-open");
-  menu.classList.toggle("open");
-});
+
+countdown(weddingDate);
+
+
