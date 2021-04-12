@@ -188,7 +188,21 @@ img{
 
 #schedule{
   display:grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+}
+
+.location {font-size:1.3em;}
+.schedule-data {
+    font-family: 'Courgette',cursive;
+}
+
+#registry {
+    font-family: 'Courgette',cursive;
+}
+
+iframe body {
+  background-color: red !important;
 }
 /*
 input[type='checkbox']{
