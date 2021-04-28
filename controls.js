@@ -4,7 +4,7 @@ var menulnk = document.getElementsByClassName("menu-link");
 var iframe = document.getElementsByClassName("zola-registry-iframe");
 //var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 
-var weddingDate = 'May 01, 2022 00:00:00';
+var weddingDate = 'May 01, 2022 17:00:00';
 
 // let togglestate = () =>{
 
@@ -18,6 +18,7 @@ let togglestate = () =>{
     menubtn.classList.toggle("btn-open");
     menu.classList.toggle("open");
 }
+
 let countdown = date =>{
     console.log(date);
     const second = 1000;
@@ -35,11 +36,13 @@ let countdown = date =>{
     document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
     },0)
 }
+
 for (var i = 0; i < menulnk.length; i++) {
   menulnk[i].addEventListener("click", (e) => {
       togglestate()
   });
 }
+
 menubtn.addEventListener("click", (e) => {
     togglestate()
 });
