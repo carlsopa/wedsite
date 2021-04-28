@@ -219,10 +219,14 @@ margin-left: 5px;}
     font-family: 'Courgette',cursive;
 }
 
-iframe {
+iframe#map-container {
     width: 90%;
     padding-left: 10%;
 
+}
+
+iframe {
+  width: 100%;
 }
 
 iframe body {
