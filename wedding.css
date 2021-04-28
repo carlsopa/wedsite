@@ -102,9 +102,10 @@ margin-left: 5px;}
   padding:10px 0px;
 }
 .right-float {
-  position: absolute;
-  left: 68vw;
-  top: 40vh;
+  position: fixed;
+  right: 10px;
+  top: 40%;
+  cursor: pointer;
 }
 .menu-list{
   position: fixed;
