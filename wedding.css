@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+h1, h2, h3 {
+    color: rgba(0, 128, 128, 1);
+
+}
+
 article {
   min-height: 100%;
   /* height: 100vh; */
@@ -25,6 +30,7 @@ p {
   /* font-size:1rem; */
   font-family: 'Montserrat',cursive;
   margin-left: 15px;
+  color: rgba(0, 128, 128, 1);
 }
 
 img {
@@ -62,7 +68,7 @@ h3 {
   padding: 5px 10px;
   border-radius: 0 0 10px 10px;
   z-index: 10;
-  color: white;
+  color: rgba(0, 128, 128, 1);
 }
 
 .title{
@@ -87,6 +93,7 @@ h3 {
   font-size: 1.5rem;
   font-family: 'Sacramento';
   text-align: center;
+  color: rgba(0, 128, 128, 1);
 }
 
 /* end universal style rules */
@@ -295,6 +302,7 @@ height: 100px;
 
 .schedule-data {
     font-family: 'Montserrat', cursive;
+    color: rgba(0, 128, 128, 1);
 }
 
 #registry {
@@ -305,12 +313,13 @@ height: 100px;
     width: 92% !important;
 }
 
-.accomodation-text {
-  font-family: 'Montserrat'
+.date {
+      color: rgba(0, 128, 128, 1);
+
 }
 
-#gallery {
-  margin-top:-160px;
+.accomodation-text {
+  font-family: 'Montserrat'
 }
 
 .zola-registry-iframe {
