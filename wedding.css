@@ -113,7 +113,7 @@ h3 {
 
 #menu-items li a {
   text-decoration: none;
-  color:white;
+  color:#efefef;
   font-family: 'Parisienne';
   font-size: 2rem;
 }
@@ -133,7 +133,7 @@ h3 {
   right: 0px;
   height: 100vh;
   width: 55vw;
-  background-color: rgba(0, 128, 128, .8);
+  background-color: rgba(0, 169, 165, .8);
   transform: translateX(65vw)
 }
 
@@ -146,10 +146,10 @@ h3 {
   padding: 10px 30px;
   border: none;
   border-radius: 10px 10px 0px 0px;
-  background-color: rgba(0, 128, 128, .8);
+  background-color: rgba(0, 169, 165, .8);
   font-family: 'Parisienne';
   font-size: 1.5rem;
-  color: white;
+  color: #efefef;
 }
 
 .btn-open {
