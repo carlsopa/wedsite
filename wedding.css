@@ -57,6 +57,10 @@ h3 {
   z-index: -1;
 }
 
+.faq-question {
+  font-weight:  bold;
+}
+
 #left_date{
   transform-origin: 0 0 ;
   transform: rotate(270deg) translateX(-50%);
@@ -195,9 +199,9 @@ h3 {
 
 .bride-div{
   position: absolute;
-bottom: 2rem;
-left: 50vw;
-transform: translateX(-50%);
+  bottom: 2rem;
+  left: 50vw;
+  transform: translateX(-50%);
 }
 
 .groom-div {
@@ -233,14 +237,15 @@ transform: translateX(-50%);
   /* color: white; */
   /* padding: 4rem; */
   color: rgba(0, 128, 128, 1);
-font-size: 1.5rem;
-background-color: lavender;
-font-weight: 900;
-height: 100px;
+  font-size: 1.5rem;
+  background-color: lavender;
+  font-weight: 900;
+  height: 100px;
   padding: 0 1rem;
   margin-left: .5rem;
   border-radius: 25px;
 }
+
 #timer li div{
   margin: 0 auto;
 }
@@ -249,7 +254,6 @@ height: 100px;
   display: block;
   margin-top:1rem;
 }
-
 
 /* end hero page styles */
 /* layout style for the story page */
@@ -276,6 +280,7 @@ height: 100px;
 .party-title {
   margin-top: -.4rem;
   text-align: center;
+  color: rgba(0, 128, 128, 1);
 }
 
 /* end style for wedding party */
@@ -301,21 +306,20 @@ height: 100px;
 }
 
 .schedule-data {
-    font-family: 'Montserrat', cursive;
-    color: rgba(0, 128, 128, 1);
+  font-family: 'Montserrat', cursive;
+  color: rgba(0, 128, 128, 1);
 }
 
 #registry {
-    font-family: 'Montserrat', cursive;
+  font-family: 'Montserrat', cursive;
 }
 
 .registry {
-    width: 92% !important;
+  width: 92% !important;
 }
 
 .date {
-      color: rgba(0, 128, 128, 1);
-
+  color: rgba(0, 128, 128, 1);
 }
 
 .accomodation-text {

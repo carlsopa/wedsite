@@ -4,7 +4,7 @@ var menulnk = document.getElementsByClassName("menu-link");
 var iframe = document.getElementsByClassName("zola-registry-iframe");
 //var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 
-var weddingDate = 'May 01, 2022 17:00:00';
+var weddingDate = 'May 01, 2022 18:00:00';
 
 // let togglestate = () =>{
 
