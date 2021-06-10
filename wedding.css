@@ -6,6 +6,7 @@ body {
   margin: 0px;
   width: 100%;
   height: 100%;
+  font-size:22px;
 }
 
 * {
@@ -27,7 +28,7 @@ article {
 }
 
 p {
-  /* font-size:1rem; */
+  font-size:1.3rem;
   font-family: 'Montserrat',cursive;
   margin-left: 15px;
   color: rgba(0, 128, 128, 1);
@@ -78,7 +79,7 @@ h3 {
 
 .title{
   display: block;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
   font-family: 'Parisienne',cursive;
   font-weight: 600;
@@ -95,8 +96,9 @@ h3 {
 }
 
 .name {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   font-family: 'Sacramento';
+  font-weight: bold;
   text-align: center;
   color: rgba(0, 128, 128, 1);
 }
@@ -279,9 +281,13 @@ h3 {
 }
 
 .party-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic;
   margin-top: -.4rem;
   text-align: center;
   color: rgba(0, 128, 128, 1);
+  font-family: 'Montserrat',cursive;
 }
 
 /* end style for wedding party */
