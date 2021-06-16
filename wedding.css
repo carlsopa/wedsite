@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Indie+Flower&family=Parisienne&family=Sacramento&family=Shadows+Into+Light&family=Pacifico&family=Courgette&display=swap");
+@import url("sttps://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Indie+Flower&family=Parisienne&family=Sacramento&family=Shadows+Into+Light&family=Pacifico&family=Courgette&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 /* start universal style rules including the classes for title, subtitles and names */
 
@@ -6,7 +6,8 @@ body {
   margin: 0px;
   width: 100%;
   height: 100%;
-  font-size:22px;
+  /* font-size:22px; */
+  font-family: 'Great Vibes';
 }
 
 * {
@@ -120,7 +121,7 @@ h3 {
 
 #menu-items li a {
   text-decoration: none;
-  color:#efefef;
+  color:#38474f;
   font-family: 'Parisienne';
   font-size: 2rem;
 }
@@ -156,7 +157,7 @@ h3 {
   background-color: rgba(0, 169, 165, .8);
   font-family: 'Parisienne';
   font-size: 1.5rem;
-  color: #efefef;
+  color: #38474f;
 }
 
 .btn-open {
@@ -309,7 +310,8 @@ h3 {
 .location {
   font-size:1.3em;
   text-align: center;
-  font-family: 'Montserrat bold';
+  font-family: 'Montserrat';
+  font-weight: bold;
 }
 
 .schedule-data {
