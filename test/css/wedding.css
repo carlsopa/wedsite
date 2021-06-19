@@ -14,9 +14,10 @@ body{
   width:50% !important;
 }
 .active p{
-  color:red;
+  /* color:red; */
   margin-left:-50%;
   margin-top: -20%;
+  background:white;
 }
 /*menu items*/
 .right-float {

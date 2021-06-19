@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',function(){
     var tabselems = document.querySelectorAll('.tabs');
     var faqs = document.querySelectorAll('.collapsible');
     var carouselelem = document.querySelectorAll('.carousel');
-    var partycarousel = document.querySelectorAll('.carousel .carousel-slider');
+    var partycarousel = document.querySelectorAll('.carousel .carousel-slider .center');
 
     const WeddingDate = 'May 01, 2022 18:00:00';
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded',function(){
     M.Sidenav.init(elems,navoptions);
     M.Tabs.init(tabselems,{});
     M.Collapsible.init(faqs, {});
-    M.Carousel.init(carouselelem,{fullWidth:true});
+    M.Carousel.init(carouselelem,{});
     M.Carousel.init(partycarousel,{fullWidth:true,indicators:true})
     CountDown(WeddingDate);
     // col.open(0);
