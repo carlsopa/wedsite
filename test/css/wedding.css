@@ -104,6 +104,10 @@ object-fit: cover;
   text-align: center;
   color: rgba(0, 128, 128, 1);
 }
+
+ul li.accomodation {
+  list-style-type: disc;
+}
 /* end text styles */
 article {
   min-height: 100%;
