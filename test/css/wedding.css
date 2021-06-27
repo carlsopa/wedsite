@@ -54,6 +54,9 @@ top:0;
 z-index: -1;
 object-fit: cover;
 }
+.card-image{
+  height:68% !important;
+}
 /*end images*/
 /*countdown timer*/
 #countdown-timer{
