@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 30vw;
+            width: 20vw;
+            align-self:center;
+        }
+        .couple{
+            display:flex;
+                flex-direction: row;
+                column-gap:40px;
+        }
+        .couple .groom{
+            flex-direction: column;
+        }
+        .couple .bride{
+            flex-direction: column;
+        }
+        @media screen and (max-width:625px) {
+            img{
+                height:40vw;
+                width:30vw;
+            }
+            #groom-image{
+                float:left;
+            }
+            #bride-image{
+                float:right;    
+            }
+            .couple{
+                display: unset;
+            }
+            .couple .groom {
+                position: relative;
+                /* width: 80%; */
+                padding-bottom:50px;
+                
+            }
+            .couple .bride {
+                position: relative;
+                /* width: 80%; */
+                float:right;
+                /* padding:50px; */
+            }
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="couple">
+        <div class=" couple groom">
+            
+                <img id="groom-image" src='./photos/wedding-party/paul_carlson-a.png'/>
+                <div>Paul Carlson</div>
+                <p id="groom-text">
+                    Paul Robert Carlson is a retail manager at the Lidl grocery stores and freelance programmer. He was born in Minnesota, went to college for archeology in South Dakota, later moving to Midland, Michigan and Detroit, and eventually Washington DC. He worked at Kmart for close to ten years, a career that runs in the family as his father and uncle worked for Kmart stores as well. His hobbies include balloon twisting and performing magic, as well as tinkering with electronics and anything on the computer. He and Michelle both share a love of technology, hiking, sci-fi fantasy and musical theater.
+                </p>
+        </div>
+        <div class="couple bride">
+                <img id="bride-image" src='./photos/wedding-party/michelle_minkoff-a.png'/>
+                <div>Michelle Minkoff</div>
+                <p id="bride-text">
+                    Michelle Elyse Minkoff is a data journalist at the Associated Press, meaning she uses technology and computer programming to tell stories in the news. She's worked as an adjunct professor for Northwestern, and given talks in the field across the United States. She was born and raised in the Illinois suburbs. She went to college in Massachusetts and graduate school at Northwestern in Evanston, Ill, and Washington DC. Her hobbies include arts and crafts, reading everything she can get her hands on, cooking, yoga and hiking.
+                </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -60,26 +60,60 @@ object-fit: cover;
 /*end images*/
 /*countdown timer*/
 #countdown-timer{
-  position: absolute;
-  top: 0;
-  color: white;
-  display: flex;
+  position: relative;
+  /* top: 0; */
+  /* color: white; */
+  /* display: flex; */
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   text-align: center;
-}
-.countdown-group{
-  display: inline-block;
-}
-.digit{
-
+  bottom: 0;
+  /* left:50%; */
+  transform: translateY(50%);
+  background: rebeccapurple;
+  padding:10px;
+  width:80vw;
+  margin: 0 auto;
 }
 .labels{
   text-transform: uppercase;
   padding:0px 24px;
 }
+@media screen and (min-width:370px){
+  .labels{
+    padding:0px 10px;
+  }
+  #countdown-timer{
+    width:90vw;
+  }
+
+}
+@media screen and (min-width: 520px){
+  #countdown-timer{
+    width:420px;
+  }
+}
+@media  screen and (min-width: 720px) {
+  #countdown-timer{
+    width:600px;
+  }
+  
+}
+#countdown-timer-content{
+  border:1px solid grey;
+}
+.countdown-group{
+  display: inline-block;
+}
+@media screen and (max-width:725px){
+  #countdown-seconds{
+    display: none;
+
+  }
+}
+
 /* text styles */
 .center-text {
   padding-left: 2.4rem;
@@ -101,7 +135,7 @@ object-fit: cover;
   margin-bottom: 2.5rem;
   padding-top: 1rem;
 }
-.name {
+#name {
   font-size: 2.3rem;
   font-family: 'Sacramento';
   font-weight: bold;
@@ -113,6 +147,53 @@ ul li.accomodation {
   list-style-type: disc;
 }
 /* end text styles */
+img{
+  height: 30vw;
+  width: 20vw;
+  align-self:center;
+}
+.couple{
+  display:flex;
+      flex-direction: row;
+      column-gap:40px;
+}
+.couple.groom{
+  flex-direction: column;
+}
+.couple.bride{
+  flex-direction: column;
+}
+@media screen and (max-width:625px) {
+  .couple .couple img{
+      height:40vw;
+      width:30vw;
+      margin-top:40px;
+  }
+  #groom-image{
+      float:left;
+  }
+  #bride-image{
+      float:right;    
+  }
+  .couple{
+      display: unset;
+  }
+  .couple .groom {
+      position: relative;
+      /* width: 80%; */
+      padding-bottom:50px;
+      
+  }
+  .couple .bride {
+      position: relative;
+      /* width: 80%; */
+      float:right;
+      /* padding:50px; */
+  }
+  .name{
+    text-align:center;
+  }
+}
 article {
   min-height: 100%;
   min-width: 100vw;
@@ -130,6 +211,12 @@ article {
 }
 .hide{
   /* visibility: hidden !important; */
+}
+@media screen and (max-width:400px) {
+  #map-container{
+    width:330px;
+  }
+  
 }
 /* .card-image.party-card {
   height: 30% !important;
