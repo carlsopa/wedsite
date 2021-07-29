@@ -148,8 +148,8 @@ ul li.accomodation {
 }
 /* end text styles */
 img{
-  height: 30vw;
-  width: 20vw;
+  /* height: 30vw; */
+  width: 10vw;
   align-self:center;
 }
 .couple{
@@ -194,6 +194,11 @@ img{
     text-align:center;
   }
 }
+.party-member{
+  display: flex;
+  flex-direction: column;
+  padding:0px 20px;
+}
 article {
   min-height: 100%;
   min-width: 100vw;
@@ -218,6 +223,69 @@ article {
   }
   
 }
+#event-grid{
+  display: flex;
+  flex-direction: column;
+
+}
+#event-location{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding-left: 20px;
+
+}
+@media screen and (min-width:800px) {
+  #event-grid{
+    flex-direction: row;
+
+  }
+ 
+  
+} 
+/* start carousel code */
+.container{
+  width:90vw;
+}
+#slider{
+  position: relative;
+  height: 400px;
+}
+.slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.showing{
+  opacity:1;
+  z-index:2;
+}
+.slider-button{
+  color:white;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  z-index:3;
+  background-color:greenyellow;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.button-left{
+  position: absolute;
+  left:-10px;
+}
+.button-right{
+  position: absolute;
+  right:-10px;
+}
+/* #event-location{
+
+  } */
 /* .card-image.party-card {
   height: 30% !important;
 } */
