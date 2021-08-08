@@ -8,7 +8,8 @@ body{
   width: 100%;
   height: 100%;
   font-size:22px;
-  color: rgb(0,128,128,1)
+  color: rgb(0,128,128,1);
+  background-color: #efefef;
 }
 .carousel.carousel-slider .carousel-item{
   width:50% !important;
@@ -28,12 +29,12 @@ body{
 }
 .btn {
   transform: rotate(270deg) translateY(50%) translateX(-50%);
-  padding: 0px 30px;
+  padding: 10px 30px;
   border: none;
   border-radius: 10px 10px 0px 0px;
   background-color: rgba(0, 169, 165, .6);
   font-family: 'Parisienne';
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: #38474f;
   z-index: 10;
 }
@@ -42,6 +43,8 @@ body{
 }
 #slide-out li a {
   color: #38474f;
+  font-family: 'Parisienne';
+  font-size: 1em;
 }
 /*end menu items*/
 /*images*/
@@ -77,6 +80,11 @@ object-fit: cover;
   width:80vw;
   margin: 0 auto;
 }
+
+
+.countdown-title {
+  font-weight: bold;
+}
 .labels{
   text-transform: uppercase;
   padding:0px 24px;
@@ -102,7 +110,8 @@ object-fit: cover;
   
 }
 #countdown-timer-content{
-  border:1px solid grey;
+  border:1px solid #efefef;
+  color:  #efefef;
 }
 .countdown-group{
   display: inline-block;
@@ -121,7 +130,7 @@ object-fit: cover;
 }
 .sub-title{
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Parisienne',cursive;
   margin: .6rem 0rem;
 }
@@ -143,8 +152,16 @@ object-fit: cover;
   color: rgba(0, 128, 128, 1);
 }
 
+.date {
+  font-weight: bold;
+}
+
+.name {
+  font-weight: bold;
+}
 ul li.accomodation {
   list-style-type: disc;
+  margin-left: 20px;
 }
 /* end text styles */
 img{
