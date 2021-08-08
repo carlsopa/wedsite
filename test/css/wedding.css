@@ -63,7 +63,6 @@ object-fit: cover;
 /*end images*/
 /*countdown timer*/
 #countdown-timer{
-  position: relative;
   /* top: 0; */
   /* color: white; */
   /* display: flex; */
@@ -74,11 +73,15 @@ object-fit: cover;
   text-align: center;
   bottom: 0;
   /* left:50%; */
-  transform: translateY(50%);
   background: rebeccapurple;
   padding:10px;
-  width:80vw;
+  width:80px;
+  bottom: 50px;
   margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, 0);
+  left:  50%;
+
 }
 
 
@@ -88,7 +91,21 @@ object-fit: cover;
 .labels{
   text-transform: uppercase;
   padding:0px 24px;
+
+
 }
+
+@media screen and (max-width:725px){
+  #countdown-seconds{
+    display: none;
+
+  }
+
+  #countdown-timer {
+}
+}
+
+
 @media screen and (min-width:370px){
   .labels{
     padding:0px 10px;
@@ -116,12 +133,7 @@ object-fit: cover;
 .countdown-group{
   display: inline-block;
 }
-@media screen and (max-width:725px){
-  #countdown-seconds{
-    display: none;
 
-  }
-}
 
 /* text styles */
 .center-text {
@@ -166,7 +178,7 @@ ul li.accomodation {
 /* end text styles */
 img{
   /* height: 30vw; */
-  width: 10vw;
+  width: 20vw;
   align-self:center;
 }
 .couple{
@@ -184,13 +196,18 @@ img{
   .couple .couple img{
       height:40vw;
       width:30vw;
-      margin-top:40px;
+  }
+
+  img {
+    width: 50vw;
   }
   #groom-image{
       float:left;
+      margin-right: 10px;
   }
   #bride-image{
       float:right;    
+      margin-right: 10px;
   }
   .couple{
       display: unset;
@@ -208,6 +225,7 @@ img{
       /* padding:50px; */
   }
   .name{
+    display: none;
     text-align:center;
   }
 }
@@ -224,7 +242,7 @@ article {
 }
 #grabber {
   font-weight: 900;
-  font-size:2.75rem;
+  font-size:40px;
   fill: #6942f5;
   text-align: center;
   background: rgba(255,255,255,0);
@@ -234,9 +252,9 @@ article {
 .hide{
   /* visibility: hidden !important; */
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
   #map-container{
-    width:330px;
+    width:95% !important;
   }
   
 }
@@ -286,11 +304,13 @@ article {
   width: 40px;
   height: 40px;
   z-index:3;
-  background-color:greenyellow;
+  background-color: #00a9a5;
   border-radius: 20%;
   display: flex;
+  margin-top: 100px;
   justify-content: center;
   align-items:center;
+  cursor: pointer;
 }
 .button-left{
   position: absolute;

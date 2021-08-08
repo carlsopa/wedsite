@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded',function(){
     // var faqs = document.querySelectorAll('.collapsible');
     var navoptions = {
         edge:'right'
-    }    
+    }
+
+   
     M.Sidenav.init(elems,navoptions);
     M.Tabs.init(tabselems,{});
     M.Collapsible.init(faqs, {});
@@ -36,4 +38,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
     // var instance = M.Sidenav.getInstance(instances);
     // instance.open();
+
+     const sliderClick = function(){
+      alert('test')
+    }
 })

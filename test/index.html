@@ -18,11 +18,11 @@
             <a href='#' data-target="slide-out" class='btn sidenav-trigger right-float'>Menu</a>
             <article style="overflow: unset !important;">
                 <img id="heading-image" src="photos/sneak-peek-12.jpg" />
-                <svg viewBox="0 110 600 300">
-                    <path id="curve" fill="transparent" d="M100,300 C200,100 400,100 500,300" />
+                <svg viewBox="30 70 500 300">
+                    <path id="curve" fill="transparent" d="M100,300 C200,100 400,100 500,350" />
                     <text id='grabber'>
                         <textPath xlink:href="#curve">
-                        Michelle Minkoff & Paul Carlson
+                        &nbsp;Michelle Minkoff & Paul Carlson
                         </textPath>
                     </text>
                 </svg>
@@ -75,8 +75,8 @@
                 <div class="couple groom">
                     
                     <!-- <div> -->
-                    <img id="groom-image" src='./photos/wedding-party/paul_carlson.png'/>
-                    <div class="name">Paul Carlson</div>
+                    <div><img id="groom-image" src='./photos/wedding-party/paul_carlson.png'/>
+                    <div class="name">Paul Carlson</div></div>
                     
                     
                     <p id='groom-text'>
@@ -193,17 +193,17 @@
                 <div class="container">
                     <div class="row">
                         <div id="slider">
-                            <div class='button-left slider-button'>
+                            <div class='button-left slider-button' onclick="number = document.getElementsByClassName('slide showing')[0].classList[1].substr(-1); document.getElementsByClassName('slide showing')[0].classList.remove('showing'); if (number === '1') {number = '6'}; document.getElementsByClassName('slide' + (Number(number)-1))[0].classList.add('showing') ">
                                 <span> < </span>
                             </div>
-                            <div class='button-right slider-button'>
+                            <div class='button-right slider-button' onclick="number = document.getElementsByClassName('slide showing')[0].classList[1].substr(-1); document.getElementsByClassName('slide showing')[0].classList.remove('showing'); if (number === '5') {number = '0'}; document.getElementsByClassName('slide' + (Number(number)+1))[0].classList.add('showing') ">
                                 <span> > </span>
                             </div>
                             <div class="slide slide1 showing">
                                 <div class="party-member">
                                     <img src='./photos/wedding-party/erik_carlosn.png'/>
                                     <div>
-                                        <span>Best Man</span>
+                                        <span style="font-weight:bolder">Best Man</span>
                                         <p>Erik Carlson is Paul's younger brother by four years, who works in sales at Zoom, a place we have all come to know and love during the pandemic. We cherish Erik's sense of humor and gracious hosting skills, and an ability (much like his and Paul's dad) to make everyone feel at ease during any conversation.</p>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@
                                 <div class="party-member">
                                     <img src='./photos/wedding-party/sara_peralta.png'/>
                                     <div>
-                                        <span class='card-title red-text'>Sarah Peralta</span>
+                                        <span style="font-weight:bolder">Maid of Honor</span>
                                         <p>Sara Peralta and Michelle met when Sara came to DC in 2014 for an internship at NPR and became fast friends attending journalism meetups, Jeopardy tapings, live theater events and the same gym session times. Sara's big heart, great sense of humor, never-ending caring, and a multitude of shared passions with Michelle mean so much, and we are so pleased to have her personality and organizing skills as a key part of our big day!</p>
                                     </div>
                                 </div>
@@ -221,7 +221,7 @@
                                 <div class="party-member">
                                     <img src='./photos/wedding-party/heather_battaglia.png'/>
                                     <div>
-                                        <span class='card-title red-text'>Heather Battaglia</span>
+                                        <span style="font-weight:bolder">Bridesmaid</span>
                                         <p>Heather Battaglia and Michelle met in their early journalism careers in 2011 in DC. They coded together, closed down restaurants talking and even led an impromptu session on the Python language and Django framework while sitting on the floor in a hallway at a conference. Heather now works as a project manager for the federal website development firm 18F. We are thrilled to have Heather be a part of this special day, appreciating her bubbly and loyal personality as well as her creativity technical and otherwise.</p>
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@
                                 <div class="party-member">
                                     <img src='./photos/wedding-party/sarah_gipp.png'/>
                                     <div>
-                                        <span class='card-title red-text'>Sarah Gipp</span>
+                                         <span style="font-weight:bolder">Bridesmaid</span>
                                         <p>Sarah Gipp and Michelle have been close friends since attending the same private middle school where they met through choir and the literary magazine. They spent time together reading (and attending bookstore launch parties for Harry Potter) and writing (Sarah loves writing fanfic). Sarah works in Chicago as a paralegal. Through the years, while much has changed, their friendship is just as strong. Sarah's kindness, nerdy quirkiness and long history with Michelle makes her a key part of our wedding day, and we are so happy to have her!</p>
                                     </div>
                                 </div>
@@ -238,7 +238,7 @@
                             <div class="slide slide5">
                                 <div class="party-member">
                                     <img src='./photos/wedding-party/kristen_goodhue.png'/>
-                                    <div ><span class='card-title red-text'>Kristen Goodhue</span>
+                                    <div > <span style="font-weight:bolder">Bridesmaid</span>
                                         <p>Kristen Goodhue and Michelle went to Northwestern's journalism graduate school together in 2009 sharing the same health and science specialization, and both ending up in DC. Kristen now works in public relations for the Smithsonian's Environemtal Reserch Center in Maryland. We appreciate Kristen's calm and easy-going nature and how she always relishes others' joy as much and possibily more than her own. We are grateful to have her as part of the wedding party!</p>
                                     </div>
                                 </div>
@@ -406,22 +406,22 @@
             <h2 class="sub-title">Photo Gallery</h2>
             <!-- <div class='hide-on-small-only'> -->
             <div class='carousel carousel-slider'>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/1.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/2.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/3.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/4.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/5.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/6.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/7.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/8.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/9.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/10.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/11.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/12.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/13.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/14.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/15.jpg'></a>
-                <a class='carousel-item' href='#two!'><img src='photos/slideshow/16.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/1.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/2.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/3.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/4.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/5.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/6.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/7.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/8.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/9.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/10.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/11.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/12.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/13.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/14.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/15.jpg'></a>
+                <a class='carousel-item' href='#two!'><img width="auto" src='photos/slideshow/16.jpg'></a>
             </div>
             <!-- </div> -->
             <!-- <iframe src="https://albumizr.com/a/Acr4" scrolling="no" frameborder="0" allowfullscreen width="500" height="600"></iframe> -->
