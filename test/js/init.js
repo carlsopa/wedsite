@@ -31,8 +31,7 @@ document.addEventListener('DOMContentLoaded',function(){
     M.Sidenav.init(elems,navoptions);
     M.Tabs.init(tabselems,{});
     M.Collapsible.init(faqs, {});
-    M.Carousel.init(carouselelem,{});
-    M.Carousel.init(partycarousel,{fullWidth:true,indicators:true})
+    M.Carousel.init(carouselelem,{indicators:true});
     CountDown(WeddingDate);
     // col.open(0);
 
